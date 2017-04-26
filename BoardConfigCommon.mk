@@ -39,7 +39,7 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
-BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=g3 user_debug=31 msm_rtb.filter=0x0
+BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=g3 user_debug=31 msm_rtb.filter=0x0 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
@@ -91,9 +91,6 @@ BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-
-# Power
-TARGET_POWERHAL_VARIANT := qcom
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
